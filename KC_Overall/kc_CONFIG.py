@@ -1,8 +1,15 @@
+# CONFIG = {
+#     'local' : {"username":"SHMSystemAdmin@operasolutions.com","password":"operaSHMQA$4"},
+#     'solution_name' : "CVS_KC_PERF_QA",
+#     'solution' : "CVSKCPERFQA",
+#     'definition' : "score_all"
+# }
+
 CONFIG = {
-    'local' : {"username":"SHMSystemAdmin@operasolutions.com","password":"operaSHMQA$4"},
+    'local' : {"username":"joydeep.purkayastha@operasolutions.com","password":"operaSHMQA$4"},
     'solution_name' : "CVS_KC_PERF_QA",
     'solution' : "CVSKCPERFQA",
-    'definition' : "score_all"
+    'definition' : "testing_wf"
 }
 
 inputs1 = {

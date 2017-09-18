@@ -1,5 +1,5 @@
 from locust import TaskSet, task
-from kc_CONFIG import *
+from kc_config import *
 
 class Task5(TaskSet):
     @task
@@ -125,10 +125,10 @@ class Task5(TaskSet):
         l.client.get("/vektordata/diagrams/kitchenlevel?output=table&outputLimitSize=1&projectId="+project_Id)
 
         #3a
-        l.client.get("/vektordata/schemas/definitions/list?id="+id_2+"&id="+id_3)
+        #l.client.get("/vektordata/schemas/definitions/list?id="+id_2+"&id="+id_3)
         #l.client.get("/vektordata/views/list?id="+id_2+"&id="+id_3)
         l.client.get("/vektordata/signals/signalstable?signalId="+signalId1+"&signalId="+signalId2)
-        l.client.get("/vektordata/schemas/definitions/list?id="+id_2+"&id="+id_3)
+        #l.client.get("/vektordata/schemas/definitions/list?id="+id_2+"&id="+id_3)
         #l.client.get("/vektordata/views/list?id="+id_2+"&id="+id_3)
         l.client.get("/vektordata/signals/signalstable?signalId="+signalId1+"&signalId="+signalId2)
         l.client.get("/vektordata/diagrams/kitchenlevel?output=table&outputLimitSize=1&projectId="+project_Id)

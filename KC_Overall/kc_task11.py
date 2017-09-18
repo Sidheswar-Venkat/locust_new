@@ -1,5 +1,5 @@
 from locust import TaskSet, task
-from kc_CONFIG import *
+from kc_config import *
 
 class Task11(TaskSet):
     @task

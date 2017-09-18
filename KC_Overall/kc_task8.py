@@ -1,5 +1,5 @@
 from locust import TaskSet, task
-from kc_CONFIG import *
+from kc_config import *
 
 class Task8(TaskSet):
     @task
@@ -238,10 +238,10 @@ class Task8(TaskSet):
         #l.client.get("/vektordata/views/list?id="+id21+"&id="+id22+"&id="+id23)
 
         #2a
-        l.client.get("/vektordata/schemas/definitions/list?id="+id8+"&id="+id12+"&id="+id19+"&id="+id5)
+        #l.client.get("/vektordata/schemas/definitions/list?id="+id8+"&id="+id12+"&id="+id19+"&id="+id5)
         #l.client.get("/vektordata/views/list?id="+id8+"&id="+id12+"&id="+id19+"&id="+id5)
         l.client.get("/vektordata/signals/signalstable?signalId="+signalId1+"&signalId="+signalId2+"&signalId="+signalId3+"&signalId="+signalId4+"&signalId="+signalId5)
-        l.client.get("/vektordata/schemas/definitions/list?id="+id8+"&id="+id12+"&id="+id19+"&id="+id5)
+        #l.client.get("/vektordata/schemas/definitions/list?id="+id8+"&id="+id12+"&id="+id19+"&id="+id5)
         #l.client.get("/vektordata/views/list?id="+id8+"&id="+id12+"&id="+id19+"&id="+id5)
         l.client.get("/vektordata/signals/signalstable?signalId="+signalId1+"&signalId="+signalId2+"&signalId="+signalId3+"&signalId="+signalId4+"&signalId="+signalId5)
         l.client.get("/vektordata/diagrams/kitchenlevel?output=table&outputLimitSize=1&projectId="+project_Id)

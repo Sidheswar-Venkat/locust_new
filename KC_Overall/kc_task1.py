@@ -1,5 +1,5 @@
 from locust import TaskSet, task
-from kc_CONFIG import *
+from kc_config import *
 
 class Task1(TaskSet):
     @task
@@ -187,7 +187,7 @@ class Task1(TaskSet):
             if res["name"] == inputs1["name_value11"]:
                 id_99 = res["id"]
                 break
-        #print "id_99 : 359633", id_99
+        #print id_99
         result = l.client.get("/vektordata/diagrams/definitionlevel?projectId="+project_Id+"&definitionId="+signal_set_id)
         result = result.json()
         result_list= result["nodes"]
@@ -214,10 +214,10 @@ class Task1(TaskSet):
         #l.client.get("/vektordata/views/list?id="+signal_set_id)
 
         #2f
-        l.client.get("/vektordata/schemas/definitions/list?id="+id_100+"&id="+signal_set_id)
+        #l.client.get("/vektordata/schemas/definitions/list?id="+id_100+"&id="+signal_set_id)
         #l.client.get("/vektordata/views/list?id="+id_100+"&id="+signal_set_id)
         l.client.get("/vektordata/signals/signalstable?signalId="+number+"&signalId="+number1+"&signalId="+id_99)
-        l.client.get("/vektordata/schemas/definitions/list?id="+id_100+"&id="+signal_set_id)
+        #l.client.get("/vektordata/schemas/definitions/list?id="+id_100+"&id="+signal_set_id)
         #l.client.get("/vektordata/views/list?id="+id_100+"&id="+signal_set_id)
         l.client.get("/vektordata/signals/signalstable?signalId="+number+"&signalId="+number1+"&signalId="+id_99)
         l.client.get("/vektordata/diagrams/kitchenlevel?output=table&outputLimitSize=1&projectId="+project_Id)
@@ -291,10 +291,10 @@ class Task1(TaskSet):
         l.client.get("/vektordata/diagrams/kitchenlevel?output=table&outputLimitSize=1&projectId="+project_Id)
 
         #4a
-        l.client.get("/vektordata/schemas/definitions/list?id="+id_100+"&id="+signal_set_id)
+        #l.client.get("/vektordata/schemas/definitions/list?id="+id_100+"&id="+signal_set_id)
         #l.client.get("/vektordata/views/list?id="+id_100+"&id="+signal_set_id)
         l.client.get("/vektordata/signals/signalstable?signalId="+number+"&signalId="+number1+"&signalId="+id_99)
-        l.client.get("/vektordata/schemas/definitions/list?id="+id_100+"&id="+signal_set_id)
+        #l.client.get("/vektordata/schemas/definitions/list?id="+id_100+"&id="+signal_set_id)
         #l.client.get("/vektordata/views/list?id="+id_100+"&id="+signal_set_id)
         l.client.get("/vektordata/signals/signalstable?signalId="+number+"&signalId="+number1+"&signalId="+id_99)
         l.client.get("/vektordata/diagrams/kitchenlevel?output=table&outputLimitSize=1&projectId="+project_Id)

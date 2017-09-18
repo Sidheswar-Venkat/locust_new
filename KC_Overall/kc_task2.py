@@ -1,5 +1,5 @@
 from locust import TaskSet, task
-from kc_CONFIG import *
+from kc_config import *
 
 class Task2(TaskSet):
     @task
@@ -104,5 +104,5 @@ class Task2(TaskSet):
         #1n
         l.client.get("/vektordata/diagrams/kitchenlevel?output=table&outputLimitSize=1&projectId="+project_id)
 
-        print "TASK-2
+        print "TASK-2"
         print "\n******************************************************************"

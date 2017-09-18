@@ -1,5 +1,5 @@
 from locust import HttpLocust, TaskSet, task
-from kc_CONFIG import *
+from kc_config import *
 from kc_task1 import *
 from kc_task2 import *
 from kc_task3 import *
@@ -14,7 +14,7 @@ def login(l):
     l.client.get("/vektordata/authenticate/user")
 
 class MainTask(TaskSet):
-    tasks = {Task1 : 1, Task2 : 2, Task3 : 3, Task5 : 5, Task7 : 7, Task8 : 8, Task9 : 9, Task11 : 11}
+    tasks = {Task1 : 1, Task2 : 1, Task3 : 1, Task5 : 1, Task7 : 1, Task8 : 1, Task9 : 1, Task11 : 1}
     def on_start(self):
         login(self)
 
